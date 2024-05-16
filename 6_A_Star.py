@@ -1,15 +1,5 @@
 import heapq
 
-class Node:
-    def __init__(self, state, parent=None, g=0, h=0):
-        self.state = state
-        self.parent = parent
-        self.g = g
-        self.h = h
-
-    def f(self):
-        return self.g + self.h
-
 class Graph:
     def __init__(self, graph_dict, heuristic_dict):
         self.graph_dict = graph_dict
